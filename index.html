@@ -4,9 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio</title>
 </head>
 <body>
+    <header class="sticky-top">
+        <nav class="navbar-expand-sm navbar-light py-0 background-primario">
+            <div class="container-fluid">
+                <div class="navbar-collapse row d-flex">
+                    <ul class="navbar-nav lista-nav d-flex px-0 justify-content-md-around justify-content-sm-around">
+                        <li class="">
+                            <a class="d-flex justify-content-center" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="">
+                            <a class="d-flex justify-content-center" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="">
+                            <a class="d-flex justify-content-center" href="#conocimientos">Conocimientos</a>
+                        </li>
+                        <li class="">
+                            <a class="d-flex justify-content-center" href="#contacto">Contacto</a>
+                        </li>                                                                  
+                    </ul>                        
+                </div>                    
+            </div>
+        </nav>
+    </header>    
+
+    <div class="container-fluid mt-3 background-tit border-radius" id="inicio">
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <h1 class="fs-1 titulo p-2">Pablo de la Torre</h1>
+            </div>
+        </div>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <h2 class="fs-2 subtitulo p-2">Desarrollador Web</h2>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="container-fluid my-3 curriculum">
+        <div class="row d-flex justify-content-center">
+            <img src="img/curriculum-vitae.png" alt="" class="img-fluid">
+        </div>
+        <div class="row d-flex justify-content-center">
+            <a href="img/curriculum-vitae.png" download class="w-50 boton-curriculum d-flex justify-content-center align-content-center mt-1">Descargar CV</a>
+        </div>
+    </div>    
+    
+    <div class="container-fluid altura-proyectos my-5" id="proyectos">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="http://www.cocinacoquere.com/" target="_blank"><img src="img/captura-coquere.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://pablodelatorre.github.io/LilianFloresdeBach/" target="_blank"><img src="img/captura-flores-de-bach.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://ecommerce-simulation-react-firebase.netlify.app/" target="_blank"><img src="img/img-ecommerce-react-firebase.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://mi-portfolio-pablodlt.000webhostapp.com/" target="_blank"><img src="img/img-portfolio.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://pablodelatorre.github.io/ejemplo-login-js/" target="_blank"><img src="img/captura-login.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://pablodelatorre.github.io/calculator-js/" target="_blank"><img src="img/calculadora-js.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/PablodelaTorre?tab=repositories/" target="_blank"><img src="img/img-repositorios-github.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://rick-and-morty-cards-react-app.netlify.app/" target="_blank"><img src="img/img-rick-morty-app.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/PablodelaTorre/calculadora-react.git" target="_blank"><img src="img/calculadora-react.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/PablodelaTorre/trabajo-react-js.git" target="_blank"><img src="img/ecommerce-react.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/PablodelaTorre/rick-morty-react.git" target="_blank"><img src="img/rick-morty-api-react.png" class="d-block w-100 border-radius" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="conocimientos">
+        <div class="row d-flex justify-content-evenly align-content-center tecHeight">
+            <img src="img/logo-html.png" alt="" class="logo">
+            <img src="img/logo-css.png" alt="" class="logo">
+            <img src="img/logo-bootstrap.png" alt="" class="logo">
+            <img src="img/logo-js.png" alt="" class="logo">
+            <img src="img/typescript.png" alt="" class="logo">
+            <img src="img/logo-git.png" alt="" class="logo">
+            <img src="img/github.png" alt="" class="logo">
+            <img src="img/logo-sass.png" alt="" class="logo">
+            <img src="img/logo-react.png" alt="" class="logo">
+        </div>
+    </div>    
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-evenly align-content-center tecHeight2">
+            <img src="img/logo-node.png" alt="" class="logo">
+            <img src="img/logo-knex.png" alt="" class="logo">
+            <img src="img/logo-sql.png" alt="" class="logo">
+            <img src="img/logo-mongodb.png" alt="" class="logo">
+        </div>
+    </div>  
+
+    <div class="container-fluid mt-4 contacto mt-2" id="contacto">
+        <div class="row d-flex justify-content-center align-content-center">
+            <p class="fs-1 fw-bold d-flex justify-content-center">Contacto:</p>
+            <p class="fs-6 fw-bold d-flex justify-content-center">País: Argentina</p>
+            <p class="fs-6 fw-bold d-flex justify-content-center">Ciudad: Ciudad Autónoma de Buenos Aires</p>
+            <p class="fs-6 fw-bold d-flex justify-content-center">Mail: delatorre.pablodaniel@gmail.com</p>
+            <p class="fs-6 fw-bold d-flex justify-content-center">Celular: +54 9 1166715243</p>
+        </div>
+        <div class="row d-flex justify-content-end align-content-center mt-2">
+            <p class="fs-2 fw-bold d-flex justify-content-center">Redes:</p>
+        </div>
+        <div class="row d-flex justify-content-center align-content-center w-100">
+            <a href="https://github.com/PablodelaTorre?tab=repositories" target="_blank" class="redes mx-4"><img src="img/github.png" alt="" class="redes"></a>
+            <a href="https://www.linkedin.com/in/pablodanieldelatorre/" target="_blank" class="redes mx-4"><img src="img/linkedin.png" alt="" class="redes"></a>
+        </div>
+    </div> 
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
