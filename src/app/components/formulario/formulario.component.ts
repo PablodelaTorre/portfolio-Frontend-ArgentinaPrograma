@@ -49,9 +49,4 @@ export class FormularioComponent implements OnInit {
       this.ruta.navigate(['/exito'])  
     })
   }
-
-  redireccionar(){
-    
-  }
-
 }

@@ -1,6 +1,6 @@
 <h1>Iniciar Sesion</h1>
 
-<form [formGroup]="form">
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)">
     <div>
         <label for="">Email</label>
         <input type="text" formControlName="email" placeholder="Ingrese su Email">
@@ -12,6 +12,10 @@
     <div>
         <label for="">Contraseña</label>
         <input type="text" formControlName="password" placeholder="Ingresar Contraseña">
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p class="danger" *ngIf="Password?.hasError('required')">La contraseña es requerida</p>
+            <p class="danger" *ngIf="Password?.errors?.['minlength']">La contraseña debe ser de 8 o mas caracteres</p>
+        </div>
         <button type="submit">Enviar</button>
     </div>
 </form>

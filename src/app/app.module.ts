@@ -11,11 +11,12 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { TecnologiasBackComponent } from './components/tecnologias-back/tecnologias-back.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ExitoComponent } from './components/exito/exito.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { InterceptorService } from './servicios/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [{provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
