@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ExitoComponent } from './components/exito/exito.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     FooterComponent,
     TecnologiasBackComponent,
     ExitoComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,
