@@ -1,7 +1,7 @@
 h1 {
     color: white;
     font-size: 5rem;
-    background-color: rgba(12, 112, 199, 0.9);
+    background-color:  rgba(70, 155, 158, 0.85);
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ form div {
 label {
     border-radius: 0.4rem;
     color: white;
-    background-color: rgba(60, 40, 100, 0.9);
+    background-color:  rgba(70, 155, 158, 0.85);
     font-size: 2rem;
     font-weight: 500;
     width: 40vw;
@@ -41,7 +41,7 @@ button {
     margin-top: 1.5rem;
     width: 25vw;
     height: 4vw;
-    background-color: rgba(60, 40, 100, 0.9);
+    background-color:  rgba(70, 155, 158, 0.95);
     color: white;
     font-size: 2rem;
     font-weight: 500;
@@ -52,4 +52,13 @@ button {
 
 button:hover{
     transform: scale(0.95);
+}
+
+.danger {
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+    color: red;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
