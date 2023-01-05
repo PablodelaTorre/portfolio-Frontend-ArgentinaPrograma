@@ -8,8 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class AutenticacionService {
 
-  url="http://localhost:8080"
-  currentUserSubject:BehaviorSubject<any>;
+  url="http://localhost:8080/login"
+    currentUserSubject:BehaviorSubject<any>;
 
   constructor(private http:HttpClient) { 
     console.log("Servicio corriendo")
